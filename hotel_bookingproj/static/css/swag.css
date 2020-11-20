@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+article img {
+    margin: auto;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    justify-content: center;
+    max-width: 70%;
+    height: auto;
+}
+
+.center {
+    height: auto;
+    width: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+
+.my-text {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.text-left {
+    display: inline-block;
+    padding-left: 0px;
+    margin: 50px;
+    font-family: 'Roboto Bold', sans-serif;
+    font-weight: 400 !important;
+}
+
+.text-right {
+  margin: 50px;
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 900 !important;
+  max-width: 50%;
+}
+
+
+.flex {
+    margin: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.flexer {
+  padding: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(119, 136, 153, .2);
+}
+
+.flex h3 {
+  margin: 120px;
+  width: 80%;
+  text-align: center;
+}
+
+.flex p {
+  margin-top: 80px;
+  text-align: left;
+}
+
+.intro {
+    width: 100%;
+    text-align: center;
+}
+
+.d-block {
+    text-align: center;
+}
+
+.display-4{
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}

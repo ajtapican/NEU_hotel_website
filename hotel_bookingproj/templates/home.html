@@ -1,18 +1,55 @@
 {% extends 'base.html' %}
+{% load static %}
 
-
+  {% block title %}
+    <title>Home Page</title>
+  {% endblock title %}
 
 
 {% block content %}
 
+<link rel="stylesheet" href="{% static 'css/swag.css' %}">
 
-<h1> this string is content from home.html </h1>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to our Home Page</h1>
+      </div>
+    </div>
 
-<h2> Hanz Hanz Hanz Hanz Hanz Hanz </h2>
+    <section class="flex-container">
+      <img src="{% static '/img/Hospitality-Landscape-Services.jpg' %}">
+    </section>
 
+    <div class="flex-container flex">
+      <br /><h2 class="intro">Online Booking System</h2>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+    </div>
 
-{% endblock %}
+  <div class="flex-container flexer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nibh euismod, dapibus leo quis, rhoncus lectus. Cras in placerat nunc, non viverra nisl. Etiam nulla lorem, mollis ut porttitor a, rhoncus id dolor. Sed feugiat, urna nec malesuada bibendum, urna ipsum faucibus nibh, eu pellentesque eros ante ac erat. Nullam in tincidunt ligula. Aliquam ut lacinia massa. Cras condimentum dui nec rhoncus pharetra. Suspendisse ac efficitur nibh, a fringilla elit. Sed vitae fermentum ipsum. Integer sed lacus vehicula, aliquam elit vitae, viverra sapien. Maecenas at est at lacus sollicitudin lacinia ut vel odio. Nunc tincidunt dignissim urna, sit amet mollis sem egestas sed.
+        </p>
+        <img src="{% static '/img/hotel-presidente-4s.jpg' %}" class="center">
+    </div>
 
+  <div class="flex-container flex">
+      <img src="{% static '/img/hotel-presidente-4s.jpg' %}" class="center">
+          <p>
+            <h3>Our quality is superb</h3>
+          </p>
+          <p>
+            Vivamus lacinia neque eu mauris auctor varius. Pellentesque eu purus et nunc porta rutrum in id elit. Nulla interdum dignissim ligula, vitae mollis erat hendrerit at. Nunc tincidunt finibus metus, sed vestibulum ante efficitur et. Suspendisse rutrum eget libero non maximus. Suspendisse et sem eleifend, facilisis magna et, commodo tortor. Nam gravida imperdiet augue non accumsan. Vivamus vel nisl porttitor, ultrices neque consectetur, dictum ipsum. Nulla at justo leo. Praesent vulputate pharetra ipsum at placerat. Etiam vestibulum nunc vel ipsum dignissim, quis porttitor lectus tincidunt. In vitae laoreet urna.
+          </p>
+    </div>
 
-<--! Insert another html code sample test -->
+    <div class="flex-container flexer">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nibh euismod, dapibus leo quis, rhoncus lectus. Cras in placerat nunc, non viverra nisl. Etiam nulla lorem, mollis ut porttitor a, rhoncus id dolor. Sed feugiat, urna nec malesuada bibendum, urna ipsum faucibus nibh, eu pellentesque eros ante ac erat. Nullam in tincidunt ligula. Aliquam ut lacinia massa. Cras condimentum dui nec rhoncus pharetra. Suspendisse ac efficitur nibh, a fringilla elit. Sed vitae fermentum ipsum. Integer sed lacus vehicula, aliquam elit vitae, viverra sapien. Maecenas at est at lacus sollicitudin lacinia ut vel odio. Nunc tincidunt dignissim urna, sit amet mollis sem egestas sed.
+          </p>
+          <img src="{% static '/img/hotel-presidente-4s.jpg' %}" class="center">
+      </div><br />
+
+      <span class="d-block p-2 bg-dark text-white class="text-center"">Copyright 2020 | Online Hotel Booking System</span>
+
+{% endblock content %}
 
