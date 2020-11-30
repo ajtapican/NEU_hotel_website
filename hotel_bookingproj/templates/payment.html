@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  {% block title %}
+    <title>Payment Section</title>
+  {% endblock title %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/payment.css' %}">
+
+<br /><br />
+<form method="POST">
+  {% csrf_token %}
+  <div class="row">
+  <div class="col-50">
+    <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="name" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+            <label for="phone"><i class="fa fa-contact"></i> Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="Contact No.">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+
+        
+            <div class="grid">
+        <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+        <div class="controls">
+          <label for="exampleFormControlTextarea1">Comments</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+      </div> 
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+
+            <div class="col-30">
+              <h3>Details</h3>
+            </div>
+
+            <div class="row">
+              <div class="col-50">
+              <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+              </div>
+              <div class="col-50">
+              <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+              </div>
+            </div><br />
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Guest</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Rooms</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div><br />
+            </form>
+
+          </div>
+        
+        </div>
+        <br />
+        <input type="submit" value="Continue to checkout" class="btns">
+      </form>
+    </div>
+    <br /><br />
+  <span class="d-block p-2 bg-dark text-white class="text-center" style="text-align:center"">Copyright 2020 | Online Hotel Booking System</span>
+  </div>
+
+  
+
+{% endblock content %}
